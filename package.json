@@ -7,9 +7,9 @@
     "start": "ng serve",
     "token": "node src/tokens/tokens.js && json-to-scss src/tokens/variables.json",
     "build": "node src/tokens/tokens.js && json-to-scss src/tokens/variables.json && ng build",
-    "watch": "ng build --watch --configuration development",
+    "watch": "node src/tokens/tokens.js && json-to-scss src/tokens/variables.json && ng build --watch --configuration development",
     "test": "ng test",
-    "storybook": "ng run meiuca-challenge:storybook",
+    "storybook": "node src/tokens/tokens.js && json-to-scss src/tokens/variables.json && ng run meiuca-challenge:storybook",
     "build-storybook": "node src/tokens/tokens.js && json-to-scss src/tokens/variables.json && ng run meiuca-challenge:build-storybook",
     "json-to-scss": "json-to-scss"
   },
