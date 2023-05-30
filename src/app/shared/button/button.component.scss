@@ -1,0 +1,19 @@
+@import "./../../../tokens/variables.scss";
+
+button{
+  font-family: map-get($variables, 'font-family-highlight');
+  font-weight: map-get($variables, 'font-weight-medium');
+  font-size: map-get($variables, 'font-size-sm');
+  line-height: map-get($variables, 'line-height-tight');
+  border-radius: map-get($variables, 'border-radius-none');
+  border-width: map-get($variables, 'border-width-none');
+  padding: map-get($variables, 'spacing-squish-xs');
+  color: map-get($variables, 'color-neutral-05');
+  background-color: map-get($variables, 'color-brand-primary-03');
+  
+  &:hover{
+    background-color: map-get($variables, 'color-brand-primary-02');
+  }
+
+}
+

@@ -1,0 +1,10 @@
+@import "./../../../tokens/variables.scss";
+
+div.shape{
+  border-radius: map-get($variables, 'border-radius-none');
+  padding: map-get($variables, 'spacing-inset-lg');
+  border-style: solid;
+  border-width: map-get($variables, 'border-width-thin');
+  border-color: map-get($variables, 'color-neutral-04');
+  background-color: map-get($variables, 'color-neutral-05');
+}

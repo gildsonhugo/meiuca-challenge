@@ -1,0 +1,17 @@
+@import "./../../../tokens/variables.scss";
+
+.shape{
+    width: 300px;
+}
+
+h2{
+  margin-bottom: map-get($variables, 'spacing-stack-xxxs');
+}
+
+h3{
+  margin-bottom: map-get($variables, 'spacing-stack-xxs');
+}
+
+p{
+  margin-bottom: map-get($variables, 'spacing-stack-sm');
+}

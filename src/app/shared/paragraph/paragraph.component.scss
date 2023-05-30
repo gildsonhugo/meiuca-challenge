@@ -1,0 +1,9 @@
+@import "./../../../tokens/variables.scss";
+
+p{
+  font-size: map-get($variables, 'font-size-xs');
+  line-height: map-get($variables, 'line-height-distant');
+  font-family: map-get($variables, 'font-family-highlight');
+  font-weight: map-get($variables, 'font-weight-regular');
+  color: map-get($variables, 'color-neutral-02');
+}

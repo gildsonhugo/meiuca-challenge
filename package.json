@@ -1,14 +1,17 @@
 {
   "name": "meiuca-challenge",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "token": "node src/tokens/tokens.js && json-to-scss src/tokens/variables.json",
+    "build": "node src/tokens/tokens.js && json-to-scss src/tokens/variables.json && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "storybook": "ng run meiuca-challenge:storybook",
-    "build-storybook": "ng run meiuca-challenge:build-storybook"
+    "build-storybook": "node src/tokens/tokens.js && json-to-scss src/tokens/variables.json && ng run meiuca-challenge:build-storybook",
+    "json-to-scss": "json-to-scss"
   },
   "private": true,
   "dependencies": {
@@ -36,6 +39,7 @@
     "@storybook/testing-library": "^0.0.14-next.2",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.5.0",
+    "json-to-scss": "^1.6.2",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.2.0",
