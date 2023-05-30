@@ -28,4 +28,4 @@ O projeto possui a capacidade de gerar de maneira automatizada dos design tokens
 
 O projeto é desenvolvido utilizando Angular como framework e está organizado no formato de um módulo chamado "sharedModule" que engloba todos os componentes solicitados no desafio. 
 
-Vídeo de apresentação: 
+Vídeo de apresentação: https://youtu.be/jn1J_N8k1vU
